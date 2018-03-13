@@ -1,0 +1,31 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+$cols__no_margin: 107;
+
+html {
+    font-size: 14px;
+}
+
+$e-width:1em;
+
+@mixin content-width($n) {
+    #content, .site-footer, #homepage-widget-area  {
+        @if ( $n < $cols__no_margin ) {
+            width: 7 * $n ; 
+        } @else { 
+            width: 7 * $n - 230px; }
+    }
+}
+
+@for $n from 360 to 30 {
+    @media (max-width: 7px*$n) {
+        @include content-width($n);
+    }
+}
+
+
+@media (min-width: 7px * $cols__no_margin ) {
+    #content, .site-footer, #homepage-widget-area  {
+        margin-left:105px;
+    }
+}

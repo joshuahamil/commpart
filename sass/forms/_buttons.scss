@@ -1,0 +1,50 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 19px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(1.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.donate-button {
+	background: $primary_green;
+	border-radius: 10px;
+}
+
+.contact-button {
+	background: $silver;
+	border-radius: 10px;
+}
+.contact-ed {
+	background: #852E8C; //purple
+}
+.contact-vc {
+	background: #EE1B24; //red
+}
+.contact-cc {
+	background: #0077CA; //blue
+}
+.contact-hwc {
+	background: #F79324; //orange
+}
+.contact-spc {
+	background: #02A650; //green
+}
+.contact-misc {
+	background: #FFE701; //yellow
+}

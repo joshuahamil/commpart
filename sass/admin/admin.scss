@@ -1,0 +1,15 @@
+@import "../variables-site/variables-site";
+
+
+#toplevel_page_cp_admin {
+    li:nth-child(8)>a {
+        color: $primary_green !important;
+    }
+
+    .wp-submenu {
+        border: solid 4px $primary_green;
+
+    }
+
+    border: solid 4px $primary_purple;
+}

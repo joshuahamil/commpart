@@ -1,0 +1,58 @@
+@import "pane";
+@import "masthead";
+
+// @for $pixel from 1 to 360 {
+//     ._#{$pixel}-wide { width: 7*#{$pixel}px; }
+// }
+
+#content {
+    margin-top: 5em;
+}
+#content, .site-footer, #homepage-widget-area  {
+}
+
+
+#left-margin-area, #right-margin-area {
+    position: fixed;
+    top: 0;
+    width: 5.0em;
+    height: 100%;
+}
+
+#left-margin-area {
+    //background-color: $primary-green;
+    left: 0;
+    z-index: -2;
+}
+
+#right-margin-area {
+    //background-color: $primary-purple;
+    right: 0;
+    z-index: -2;
+}
+
+@media (max-width: 7px * $cols__no_margin) {
+    #left-margin-area, #right-margin-area {
+        display:none;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+section {
+    clear: both;
+}
+
+footer {
+    clear: both;
+}
+
+.sep {
+    display: inline-block;
+}

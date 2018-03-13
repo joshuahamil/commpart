@@ -1,0 +1,31 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+// under construction specific style follows
+
+#staff-contact {
+    //@include breadth(true);
+    //margin-top: 100px;
+
+    th {
+        text-decoration: underline;
+    }
+}
+
+#content , #homepage-widget-area, #colophone, .site-info {
+    //display: none;
+}
+
+
+#site {
+    overflow: hidden;
+}

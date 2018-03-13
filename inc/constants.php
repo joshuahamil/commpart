@@ -1,0 +1,38 @@
+<?php
+/**
+ * 
+ * 
+ * @package commpart
+ */
+$cp_staff_settings = array (
+    'cp-ed-pic',
+    'cp-ed-title',
+    'cp-ed-name',
+    'cp-ed-phone',
+    'cp-ed-email',
+    'cp-ed-bio',
+    'cp-vc-pic',
+    'cp-vc-title',
+    'cp-vc-name',
+    'cp-vc-phone',
+    'cp-vc-email',
+    'cp-vc-bio',
+    'cp-cc-pic',
+    'cp-cc-title',
+    'cp-cc-name',
+    'cp-cc-phone',
+    'cp-cc-email',
+    'cp-cc-bio',
+    'cp-hwc-pic',
+    'cp-hwc-title',
+    'cp-hwc-name',
+    'cp-hwc-phone',
+    'cp-hwc-email',
+    'cp-hwc-bio',
+    'cp-spc-pic',
+    'cp-spc-title',
+    'cp-spc-name',
+    'cp-spc-phone',
+    'cp-spc-email',
+    'cp-spc-bio'
+);

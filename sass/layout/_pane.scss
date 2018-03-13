@@ -1,0 +1,27 @@
+section {
+    margin-bottom: 10px;
+	.pane {
+        position: relative;
+		border-radius: 6px;
+		background-color: #f7f7f7;
+        display: block;
+        float: left;
+        z-index: 1;
+    }
+    .hl:hover, .hl:focus {
+        box-shadow: 1px 2px 5px 10px rgba(0,0,0,0.50);
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    $column_width: 360px;
+    &.twin {
+    }
+
+    &.triplet {
+    }
+
+    &.quad {
+    }
+    
+}

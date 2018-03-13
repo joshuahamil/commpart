@@ -1,0 +1,19 @@
+//2520
+
+$col: 1px;
+
+// @mixin update-width($pico) {
+//     #page {
+//         width: $col * ($pico - 210);
+//         left: 105px;
+//     }
+// }
+// 
+// @mixin grid() {
+//     $pico:1;
+//     @for $c from 2520 through 1 {
+// 	    @media (max-width:$c*$col) { @include update-width($c); }
+//     }
+// }
+
+//@include grid();

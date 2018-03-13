@@ -1,0 +1,93 @@
+#masthead {
+    position: fixed !important;
+    top: 0px;
+    left: 5em;
+    background-color: #fff;
+    height: 5em;
+    z-index: 10;
+    border-bottom: solid $primary_orange 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    .custom-logo {
+        //position: fixed;
+        margin-top: 0.05em;
+        height: 3em;
+        width: auto;
+        margin-left: 2.0em;
+        @media screen and ( max-width: 7px * $cols__no_margin ) {
+            margin-left: 0;
+        }
+    }
+    
+    .site-title {
+        opacity: 0;
+        margin-left:-1000em;
+    }
+
+    .site-description {
+        position: absolute;
+        top: 0;
+        left: 7em;
+        margin-top: 0.1em;
+        font-size: 0.75em;
+        color: $silver;
+        @media screen and ( max-width: 7px * $cols__no_margin ) {
+            left: 5em;
+        }
+    }
+
+    .main-navigation {
+        position: fixed;
+        top: 3em;
+        margin-top: 0.4em;
+        margin-left: 5em;
+        @media screen and ( max-width: 7px * $cols__no_margin ) {
+            margin-left: 0;
+        }
+    }
+
+    #masthead-widget-area {
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow: visible;
+        button {
+            //margin-top : -5.1em;
+            @media screen and (max-width: 7 * $cols__no_margin) {
+               opacity:0; 
+            }
+        }
+    }
+}
+
+#site-navigation {
+    //display:none;
+    a {
+        @include font-size(1.5);
+    }
+    //top: 92px;
+    background-color: white;
+    //box-shadow: 0 2px 29px -7px black;
+
+}
+
+#masthead-widget-area {
+    //display:none;
+
+    margin-top: 1em;
+    margin-right: 1em;
+
+    section {
+        display: block;
+        float: left;
+    }
+    @media (max-width: 7px * $cols__no_margin ) {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 852px) {
+    @include font-size(1.05);
+}
