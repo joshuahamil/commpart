@@ -7,38 +7,39 @@
  * @package commpart
  */
 
-require get_template_directory() . '/inc/setup.php';
-require get_template_directory() . '/inc/constants.php';
-require get_template_directory() . '/inc/enqueue.php';
-require get_template_directory() . '/inc/function-admin.php';
-require get_template_directory() . '/inc/function-widgets.php';
+define( CP_TEMPLATE_DIR, get_template_directory() );
+
+require CP_TEMPLATE_DIR . '/inc/setup.php';
+require CP_TEMPLATE_DIR . '/inc/constants.php';
+require CP_TEMPLATE_DIR . '/inc/enqueue.php';
+require CP_TEMPLATE_DIR . '/inc/function-admin.php';
+require CP_TEMPLATE_DIR . '/inc/function-widgets.php';
 
 
 
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+require CP_TEMPLATE_DIR . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require CP_TEMPLATE_DIR . '/inc/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require CP_TEMPLATE_DIR . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require CP_TEMPLATE_DIR . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+	require CP_TEMPLATE_DIR . '/inc/jetpack.php';
 }
-
